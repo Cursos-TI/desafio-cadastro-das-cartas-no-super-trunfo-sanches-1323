@@ -41,12 +41,9 @@ int main()
         printf("digite o numero de pontos turisticos:\n");
         scanf("%d", &turistico1);
 
-
             densidadep1 = (populacao1 / area1); //operação de divisão densidade populacional
             percapita1  = (pib1 / populacao1);  // operação de divisão pib per capita
              
-            
-
        printf("-----------CARTA 1-----------\n");
        printf("-ESTADO:%s\n", estado1);
        printf("-CODIGO:%s%s\n",estado1, codigo1);
@@ -58,6 +55,7 @@ int main()
        printf("-DENSIDADE POPULACIONAL:%.3f hab/Km² \n", densidadep1); 
        printf("-PIB PER CAPITA:%.0f Bilhões Reais\n", percapita1);
        printf("-----------------------------\n");
+
 
        printf("digite a letra do estado:\n");
        scanf("%s", &estado2);
@@ -80,10 +78,8 @@ int main()
         printf("digite o numero de pontos turisticos:\n");
         scanf("%d", &turistico2);
 
-
         densidadep2 =(populacao2 / area2);  //operação de divisão da densidade populacional
         percapita2  =(pib2 / populacao2);   // operação de divisão pib per capita
-
 
         printf("-----------CARTA 2-----------\n");
         printf("-ESTADO:%s\n", estado2);
@@ -97,13 +93,11 @@ int main()
         printf("-PIB PER CAPITA:%.0f Bilhões Reais\n", percapita2);
         printf("-----------------------------\n");
 
-
             calculodensidade1 =  (1 / densidadep1); // calculo do inverso da densidade
             calculodensidade2 =  (1 / densidadep2);
             superpoder1 = ( populacao1 + area1 + pib1 + turistico1 + percapita1 + calculodensidade1 );// soma dos atributos
             superpoder2 = ( populacao2 + area2 + pib2 + turistico2 + percapita2 + calculodensidade2 );// soma dos atributos
           
-
             printf("-----COMPARAÇÃO DE CARTAS-----\n");// comparando as cartas
             printf("POPULAÇÃO: CARTA 1 VENCEU (%li) \n", (populacao1 > populacao2));
             printf("AREÁ: CARTA 1 VENCEU (%d)\n",(area1 > area2));
