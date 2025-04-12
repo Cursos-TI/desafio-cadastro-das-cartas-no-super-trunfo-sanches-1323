@@ -102,7 +102,7 @@ int main()
             calculodensidade2 =  (1 / densidadep2);
             superpoder1 = ( populacao1 + area1 + pib1 + turistico1 + percapita1 + calculodensidade1 );// soma dos atributos
             superpoder2 = ( populacao2 + area2 + pib2 + turistico2 + percapita2 + calculodensidade2 );// soma dos atributos
-            superpoder = ( superpoder1 > superpoder2);
+          
 
             printf("-----COMPARAÇÃO DE CARTAS-----\n");// comparando as cartas
             printf("POPULAÇÃO: CARTA 1 VENCEU (%li) \n", (populacao1 > populacao2));
@@ -111,7 +111,7 @@ int main()
             printf("PONTOS TURÍSTICOS: CARTA 1 VENCEU (%d)\n",(turistico1 > turistico2));
             printf("DENSIDADE POPULACIONAL: CARTA 1 VENCEU (%d)\n",(calculodensidade1 > calculodensidade2));
             printf("PIB PER CAPITA: CARTA 1 VENCEU (%d)\n",(percapita1 > percapita2));
-            printf("SUPER PODER: CARTA 1 VENCEU (%d)\n", superpoder);
+            printf("SUPER PODER: CARTA 1 VENCEU (%d)\n", (superpoder1 > superpoder2));
             printf("------------------------------\n");
 
 
